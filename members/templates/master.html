@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'mystyles.css' %}">
+  <title>{% block title %}{% endblock %}</title>  <!-- 'block acts as a placeholder, telling Django to replace the 'block' with the contents of the child template. -->
+</head>
+<body>
+
+<div class="topnav">
+  <a href="/">HOME</a> |
+  <a href="/members">MEMBERS</a>
+</div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

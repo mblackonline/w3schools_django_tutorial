@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+  
+  {% comment %}
+  <ul>
+    {% for x in mymembers %}   
+      <li
+        {% if forloop.last %}
+          style='background-color:rgb(173, 230, 177);'
+        {% endif %}     
+      >{{ x.firstname }}</li>
+    {% endfor %}
+  </ul>
+  {% endcomment %}
+
+  {# NOTE :  '% %' are called template tags and are used to execute logic in the template #}
+
+  {# In templates, you can use 2 hashtags for comments #}
+
+  {% comment %}
+  You can also use the comment tag to comment out large blocks of HTML
+  {% endcomment %}
+
+  {% include 'footer.html' %} 
+  
+</body>
+</html>
