@@ -75,6 +75,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'cd_tech_backend.wsgi.application'
 
 
+# To run the app in development mode, open your terminal and create a temporary environment variable by typing: `export DJANGO_ENV=development`,`echo $DJANGO_ENV` (linux).
+# If you want to run in production mode, just open a new terminal and do not create the above temporary environment variable.
+
 if os.getenv('DJANGO_ENV') == 'development':
     DATABASES = {
         'default': {
